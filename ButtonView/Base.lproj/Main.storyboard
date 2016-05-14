@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -27,34 +28,42 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Clo-Uf-Hpl">
                                 <rect key="frame" x="0.0" y="533" width="320" height="35"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Et-zI-fgJ">
-                                        <rect key="frame" x="83" y="3" width="31" height="30"/>
-                                        <state key="normal" title="Yep!"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1u-JO-6nh">
-                                        <rect key="frame" x="229" y="3" width="42" height="30"/>
+                                        <rect key="frame" x="160" y="0.0" width="160" height="35"/>
                                         <state key="normal" title="Nope!"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Et-zI-fgJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="35"/>
+                                        <state key="normal" title="Yep!"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="n1u-JO-6nh" firstAttribute="centerY" secondItem="Clo-Uf-Hpl" secondAttribute="centerY" id="But-PB-yD7"/>
-                                    <constraint firstItem="7Et-zI-fgJ" firstAttribute="centerY" secondItem="Clo-Uf-Hpl" secondAttribute="centerY" id="NP5-ax-9uo"/>
-                                    <constraint firstAttribute="height" constant="35" id="mPD-3V-7MK"/>
-                                    <constraint firstItem="7Et-zI-fgJ" firstAttribute="leading" secondItem="Clo-Uf-Hpl" secondAttribute="leading" constant="83" id="utB-aH-gje"/>
-                                    <constraint firstAttribute="trailing" secondItem="n1u-JO-6nh" secondAttribute="trailing" constant="49" id="w9r-JQ-frg"/>
+                                    <constraint firstItem="n1u-JO-6nh" firstAttribute="top" secondItem="Clo-Uf-Hpl" secondAttribute="top" id="8MW-6H-hkE"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Et-zI-fgJ" secondAttribute="bottom" id="Jnx-nv-ny0"/>
+                                    <constraint firstItem="n1u-JO-6nh" firstAttribute="leading" secondItem="7Et-zI-fgJ" secondAttribute="trailing" id="K7k-eg-LOc"/>
+                                    <constraint firstItem="7Et-zI-fgJ" firstAttribute="top" secondItem="Clo-Uf-Hpl" secondAttribute="top" id="KYg-Cu-d8A"/>
+                                    <constraint firstItem="n1u-JO-6nh" firstAttribute="leading" secondItem="7Et-zI-fgJ" secondAttribute="trailing" id="MCA-kI-zCo"/>
+                                    <constraint firstItem="7Et-zI-fgJ" firstAttribute="width" secondItem="Clo-Uf-Hpl" secondAttribute="width" multiplier="0.5" id="Wcs-N6-Pnt"/>
+                                    <constraint firstAttribute="trailing" secondItem="n1u-JO-6nh" secondAttribute="trailing" id="aoF-WV-Yzh"/>
+                                    <constraint firstItem="n1u-JO-6nh" firstAttribute="width" secondItem="Clo-Uf-Hpl" secondAttribute="width" multiplier="0.5" id="av1-Ro-NfK"/>
+                                    <constraint firstItem="7Et-zI-fgJ" firstAttribute="leading" secondItem="Clo-Uf-Hpl" secondAttribute="leading" id="h4P-kG-4rd"/>
+                                    <constraint firstAttribute="bottom" secondItem="n1u-JO-6nh" secondAttribute="bottom" id="rTi-0H-q3J"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Clo-Uf-Hpl" firstAttribute="leading" secondItem="Plx-3d-Z8j" secondAttribute="leading" id="0Dy-Ga-NyD"/>
+                            <constraint firstAttribute="bottom" secondItem="HN8-hK-nOr" secondAttribute="bottom" constant="35" id="2ON-Qi-uaP"/>
+                            <constraint firstItem="ZNx-bZ-xbk" firstAttribute="top" secondItem="Clo-Uf-Hpl" secondAttribute="bottom" id="5UB-Q0-aTG"/>
                             <constraint firstItem="HN8-hK-nOr" firstAttribute="leading" secondItem="Plx-3d-Z8j" secondAttribute="leading" id="7bQ-rJ-xUD"/>
+                            <constraint firstAttribute="trailing" secondItem="Clo-Uf-Hpl" secondAttribute="trailing" id="8KE-cR-2yt"/>
                             <constraint firstAttribute="trailing" secondItem="HN8-hK-nOr" secondAttribute="trailing" id="aOH-Gy-Tcd"/>
-                            <constraint firstItem="ZNx-bZ-xbk" firstAttribute="top" secondItem="Clo-Uf-Hpl" secondAttribute="bottom" id="ehz-YI-PAb"/>
+                            <constraint firstItem="Clo-Uf-Hpl" firstAttribute="leading" secondItem="Plx-3d-Z8j" secondAttribute="leading" id="jlO-jq-7ik"/>
+                            <constraint firstItem="Clo-Uf-Hpl" firstAttribute="top" secondItem="HN8-hK-nOr" secondAttribute="bottom" id="l8a-GJ-uk8"/>
                             <constraint firstItem="HN8-hK-nOr" firstAttribute="top" secondItem="Plx-3d-Z8j" secondAttribute="topMargin" id="rx4-7c-9hb"/>
-                            <constraint firstAttribute="trailing" secondItem="Clo-Uf-Hpl" secondAttribute="trailing" id="wBS-G2-LaO"/>
-                            <constraint firstItem="Clo-Uf-Hpl" firstAttribute="top" secondItem="HN8-hK-nOr" secondAttribute="bottom" id="yg6-Zw-og7"/>
+                            <constraint firstItem="HN8-hK-nOr" firstAttribute="leading" secondItem="Clo-Uf-Hpl" secondAttribute="leading" id="xI4-Zs-eYn"/>
+                            <constraint firstItem="Clo-Uf-Hpl" firstAttribute="top" secondItem="HN8-hK-nOr" secondAttribute="bottom" id="y5g-nN-AQI"/>
                         </constraints>
                     </view>
                 </viewController>
